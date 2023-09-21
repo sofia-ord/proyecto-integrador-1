@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tsukimi+Rounded:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Home</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <a class="logo__link" href="home.html">
+          <img class="logo-img" src="/assets/productosImg/bruncherialogo.png" />
+        </a>
+      </div>
+      <nav class="header__navbar navbar">
+        <div class="bars-menu">
+          <i class="fa-solid fa-bars bars"></i>
+
+          <ul class="navbar__list">
+            <li><a href="#menu" class="navbar__link">Menu</a></li>
+            <li><a href="#nosotros" class="navbar__link">Nosotros</a></li>
+            <li><a href="#contacto" class="navbar__link">Contacto</a></li>
+            <li><a href="/index.html" class="navbar__link">Salir</a></li>
+          </ul>
+        </div>
+        <div class="cart-label">
+          <i class="fa-solid fa-cart-shopping cart-icon" id="cartIcon">
+            <div class="cart-bubble">0</div>
+          </i>
+          <div class="overlay"></div>
+        </div>
+
+        <div class="cart">
+          <h2>Tu Pedido</h2>
+
+          <div class="cart-container">
+            <!--ACA VA EL TEMPLATE HECHO EN JS-->
+          </div>
+          <span class="divider"></span>
+
+          <div class="cart-total">
+            <p>Total:</p>
+            <span class="total">18</span>
+          </div>
+          <button class="btn-buy btn">Comprar</button>
+          <button class="btn-delete btn">Vaciar carrito</button>
+        </div>
+        <div class="overlay"></div>
+      </nav>
+    </header>
+    <main>
+      <!--HERO-->
+      <section id="hero">
+        <div class="hero-info">
+          <img src="/assets/productosImg/bruncherialogo.png" class="hero__logo" />
+          <h1>Bruncheria</h1>
+          <h2>spritzeria y cafe</h2>
+          <p>Hora de Brunchear</p>
+        </div>
+      </section>
+      <!--fin de HERO-->
+
+      <!--MENU-->
+      <section id="menu">
+        <h2>Menu</h2>
+        <div class="categories">
+          <button class="category btn active">Menu completo</button>
+          <button class="category btn" data-category="caliente">
+            Cafe caliente
+          </button>
+          <button class="category btn" data-category="especiales">
+            Especiales
+          </button>
+          <button class="category btn" data-category="te">te</button>
+          <button class="category btn" data-category="refrescos">
+            refrescos
+          </button>
+          <button class="category btn" data-category="spritz">spritz</button>
+        </div>
+
+        <div class="container">
+          <div class="products-container">
+            <!--
+              <div class="product">
+                <img class="product-img" src="/assets/img/espresso.jpg" />
+                <div class="product-info">
+                  <h3>Espresso</h3>
+                  <span>$620</span>
+                </div>
+  
+                <div class="product-btns">
+                  <button class="product-btn btn"> Take Away </buttton
+                </div>
+              </div>
+            </div>
+            -->
+          </div>
+        </div>
+        <div class="container-btn">
+          <button class="btn-load btn" id="verMas-btn">Ver mas</button>
+        </div>
+      </section>
+      <!--Fin de Menu-->
+
+      <!--Nosotros-->
+      <section id="nosotros">
+        <h3>Nosotros</h3>
+        <div class="nosotros-contenedor">
+          <img class="nosotros-img" src="/assets/productosImg/brunch-nosotros.jpg" />
+          <div class="contenedor-p">
+            <p>
+              En la Bruncheria, nos apasiona ofrecer experiencias gastronómicas
+              únicas y memorables. Nuestra historia comenzó con una visión:
+              crear un espacio donde la comida excepcional se combine con un
+              ambiente acogedor y un servicio impecable. Nos enorgullece decir
+              que hemos logrado convertir esa visión en realidad. Nuestro equipo
+              está compuesto por chefs expertos y amantes de la comida, cuyo
+              objetivo principal es sorprender a nuestros clientes con platos
+              exquisitos y creativos. Cada ingrediente que utilizamos es
+              seleccionado cuidadosamente, priorizando la frescura y la calidad
+              para brindar una experiencia culinaria extraordinaria. Creemos que
+              la gastronomía es mucho más que solo alimentarse; es una forma de
+              arte que estimula todos los sentidos. Por eso, nos esforzamos por
+              crear platos que no solo sean deliciosos, sino también visualmente
+              atractivos. Queremos que cada bocado sea una experiencia sensorial
+              completa.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!--Fin de Nosotros-->
+
+      <!--Contacto-->
+      <section id="contacto">
+        <h3>Contacto</h3>
+        <div class="contacto-bg"></div>
+        <form class="formulario">
+          <div class="campo">
+            <label class="campo__label" for="nombre">Nombre</label>
+            <input
+              class="campo__field"
+              type="text"
+              placeholder="Tu Nombre"
+              id="nombre"
+            />
+            <small></small>
+          </div>
+
+          <div class="campo">
+            <label class="campo__label" for="email">E-mail</label>
+            <input
+              class="campo__field"
+              type="email"
+              placeholder="Tu E-mail"
+              id="email"
+            />
+            <small></small>
+          </div>
+
+          <div class="campo">
+            <label class="campo__label" for="mensaje">Mensaje</label>
+            <textarea
+              class="campo__field campo__field--textarea"
+              id="mensaje"
+            ></textarea>
+            <small></small>
+          </div>
+
+          <div class="campo campo__btn">
+            <input type="submit" value="Enviar" class="btn--form btn" />
+          </div>
+        </form>
+      </section>
+      <!--Fin de contacto-->
+    </main>
+    <!--footer-->
+    <footer class="footer">
+      <div class="seguinos-redes">
+        <h4>Seguinos en nuestras redes</h4>
+        <div class="redes-links">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="derechos-reservados">
+          <p>Copyright © 2023 Bruncheria - Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+    <div class="add-modal"></div>
+    <script src="/JS/data.js"></script>
+    <script src="/JS/home.js"></script>
+  </body>
+</html>

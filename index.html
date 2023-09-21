@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/assets/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,209 +27,26 @@
     <header class="header">
       <div class="header__logo">
         <a class="logo__link" href="index.html">
-          <img class="logo-img" src="/assets/bruncherialogo.png" />
+          <img class="logo-img" src="/assets/productosImg/bruncherialogo.png" />
         </a>
       </div>
-      <nav class="header__navbar navbar">
-        <label for="toggle-menu"><i class="fa-solid fa-bars bars"></i></label>
-        <input type="checkbox" id="toggle-menu" />
-
-        <ul class="navbar__list">
-          <li><a href="#menu" class="navbar__link">Menu</a></li>
-          <li><a href="#nosotros" class="navbar__link">Nosotros</a></li>
-          <li><a href="#contacto" class="navbar__link">Contacto</a></li>
-        </ul>
-      </nav>
+      <nav class="header__navbar navbar"></nav>
     </header>
     <main>
       <!--HERO-->
       <section id="hero">
         <div class="hero-info">
-          <img src="/assets/bruncherialogo.png" class="hero__logo" />
+          <img src="/assets/productosImg/bruncherialogo.png" class="hero__logo" />
           <h1>Bruncheria</h1>
           <h2>spritzeria y cafe</h2>
           <p>Hora de Brunchear</p>
           <div class="hero__btns">
-            <a class="hero__btn" href="login.html">Inicia sesión</a>
-            <a class="hero__btn" href="signin.html">Regístrate</a>
+            <a class="hero__btn" href="/pages/login.html">Inicia sesión</a>
+            <a class="hero__btn" href="/pages/signin.html">Regístrate</a>
           </div>
         </div>
       </section>
       <!--fin de HERO-->
-
-      <!--MENU-->
-      <section id="menu">
-        <h2>Menu</h2>
-        <div class="container">
-          <div class="menu-product">
-            <div class="product">
-              <img class="product-img" src="/assets/espresso.jpg" />
-              <div class="product-info">
-                <h3>Espresso</h3>
-                <span>$620</span>
-              </div>
-
-              <div class="product-btns">
-                <a class="product-btn btn" href="#">Take Away</a>
-                <a class="product-btn btn" href="#">Reserva</a>
-              </div>
-            </div>
-
-            <div class="product">
-              <img class="product-img" src="/assets/cafe-macchiato.jpg" />
-              <div class="product-info">
-                <h3>Cafe Macchiato</h3>
-                <span>$620</span>
-              </div>
-              <div class="product-btns">
-                <a class="product-btn btn" href="#">Take Away</a>
-                <a class="product-btn btn" href="#">Reserva</a>
-              </div>
-            </div>
-
-            <div class="product">
-              <img class="product-img" src="/assets/cafe-ristretto.jpg" />
-              <div class="product-info">
-                <h3>Ristretto</h3>
-                <span>$490</span>
-              </div>
-              <div class="product-btns">
-                <a class="product-btn btn" href="#">Take Away</a>
-                <a class="product-btn btn" href="#">Reserva</a>
-              </div>
-            </div>
-
-            <div class="product">
-              <img class="product-img" src="/assets/americano.jpg" />
-              <div class="product-info">
-                <h3>Americano</h3>
-                <span>$620</span>
-              </div>
-              <div class="product-btns">
-                <a class="product-btn btn" href="#">Take Away</a>
-                <a class="product-btn btn" href="#">Reserva</a>
-              </div>
-            </div>
-
-            <div class="product">
-              <img class="product-img" src="/assets/cafe-capuccino.jpg" />
-              <div class="product-info">
-                <h3>Capuccino</h3>
-                <span>$620</span>
-              </div>
-              <div class="product-btns">
-                <a class="product-btn btn" href="#">Take Away</a>
-                <a class="product-btn btn" href="#">Reserva</a>
-              </div>
-            </div>
-
-            <div class="product">
-              <img class="product-img" src="/assets/chocolatada.jpg" />
-              <div class="product-info">
-                <h3>Chocolatada</h3>
-                <span>$620</span>
-              </div>
-              <div class="product-btns">
-                <a class="product-btn btn" href="#">Take Away</a>
-                <a class="product-btn btn" href="#">Reserva</a>
-              </div>
-            </div>
-
-            <div class="product">
-              <img class="product-img" src="/assets/flat-white.jpg" />
-              <div class="product-info">
-                <h3>Flat White</h3>
-                <span>$620</span>
-              </div>
-              <div class="product-btns">
-                <a class="product-btn btn" href="#">Take Away</a>
-                <a class="product-btn btn" href="#">Reserva</a>
-              </div>
-            </div>
-
-            <div class="product">
-              <img class="product-img" src="/assets/cafe-latte.jpg" />
-              <div class="product-info">
-                <h3>Cafe Latte</h3>
-                <span>$620</span>
-              </div>
-              <div class="product-btns">
-                <a class="product-btn btn" href="#">Take Away</a>
-                <a class="product-btn btn" href="#">Reserva</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--Fin de Menu-->
-
-      <!--Nosotros-->
-      <section id="nosotros">
-        <h3>Nosotros</h3>
-        <div class="nosotros-contenedor">
-          <img class="nosotros-img" src="/assets/brunch-nosotros.jpg" />
-          <div class="contenedor-p">
-            <p>
-              En la Bruncheria, nos apasiona ofrecer experiencias gastronómicas
-              únicas y memorables. Nuestra historia comenzó con una visión:
-              crear un espacio donde la comida excepcional se combine con un
-              ambiente acogedor y un servicio impecable. Nos enorgullece decir
-              que hemos logrado convertir esa visión en realidad. Nuestro equipo
-              está compuesto por chefs expertos y amantes de la comida, cuyo
-              objetivo principal es sorprender a nuestros clientes con platos
-              exquisitos y creativos. Cada ingrediente que utilizamos es
-              seleccionado cuidadosamente, priorizando la frescura y la calidad
-              para brindar una experiencia culinaria extraordinaria. Creemos que
-              la gastronomía es mucho más que solo alimentarse; es una forma de
-              arte que estimula todos los sentidos. Por eso, nos esforzamos por
-              crear platos que no solo sean deliciosos, sino también visualmente
-              atractivos. Queremos que cada bocado sea una experiencia sensorial
-              completa.
-            </p>
-          </div>
-        </div>
-      </section>
-      <!--Fin de Nosotros-->
-
-      <!--Contacto-->
-      <section id="contacto">
-        <h3>Contacto</h3>
-        <div class="contacto-bg"></div>
-        <form class="formulario">
-          <div class="campo">
-            <label class="campo__label" for="nombre">Nombre</label>
-            <input
-              class="campo__field"
-              type="text"
-              placeholder="Tu Nombre"
-              id="nombre"
-            />
-          </div>
-
-          <div class="campo">
-            <label class="campo__label" for="email">E-mail</label>
-            <input
-              class="campo__field"
-              type="email"
-              placeholder="Tu E-mail"
-              id="email"
-            />
-          </div>
-
-          <div class="campo">
-            <label class="campo__label" for="mensaje">Mensaje</label>
-            <textarea
-              class="campo__field campo__field--textarea"
-              id="mensaje"
-            ></textarea>
-          </div>
-
-          <div class="campo campo__btn">
-            <input type="submit" value="Enviar" class="btn--form btn" />
-          </div>
-        </form>
-      </section>
-      <!--Fin de contacto-->
     </main>
     <!--footer-->
     <footer class="footer">
@@ -245,5 +62,6 @@
         </div>
       </div>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>

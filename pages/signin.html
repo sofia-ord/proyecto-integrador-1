@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/style.css" />
+    <title>Registrate</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <a class="logo__link" href="../index.html">
+          <img class="logo-img" src="/assets/img/bruncherialogo.png" />
+        </a>
+      </div>
+    </header>
+    <main>
+      <!--Sign in-->
+      <section id="signin">
+        <div class="signin-container">
+          <div class="container-logo">
+            <img src="/assets/img/bruncherialogo.png" class="signin__logo" />
+          </div>
+          <h2>¿Sos nuevo en la Bruncheria?</h2>
+          <form class="form" id="register-form">
+            <div class="form__field">
+              <label for="name"></label>
+              <input type="text" name="name" placeholder="nombre" id="name"/>
+              <small></small>
+            </div>
+            <div class="form__field">
+              <label for="lastname"></label>
+              <input type="text" placeholder="apellido" id="lastName" />
+              <small></small>
+            </div>
+            <div class="form__field">
+              <label for="email"></label>
+              <input type="email" name="email" placeholder="email" id="email" />
+              <small></small>
+            </div>
+            <div class="form__field">
+              <label for="password"></label>
+              <input type="password" placeholder="password" id="password"/>
+              <small></small>
+            </div>            
+            <div class="signin-btns">
+              <input
+                type="submit"
+                value="Crear cuenta"
+                class="signin-btn btn"
+              />
+              <input
+                type="submit"
+                value="Unirse con Google"
+                class="signin-btn btn"
+              />
+            </div>
+            <a href="/pages/login.html" class="forgot-pass">Ya tengo una cuenta</a>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script src="/JS/signin.js"></script>
+  </body>
+</html>
