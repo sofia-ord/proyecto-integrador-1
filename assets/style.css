@@ -369,7 +369,7 @@ main {
 
   }
   .navbar__link {
-    top: 50px;
+    top: 0;
     font-size: 20px;
     position: relative;
     z-index: 2;
