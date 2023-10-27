@@ -839,6 +839,11 @@ small {
 @media (max-width: 589px) {
   .formulario {
     font-size: 25px;
+    width: 90%;
+  }
+  .contacto-bg{
+    background-image: none;
+    height: 5rem;
   }
   .campo {
     display: flex;
