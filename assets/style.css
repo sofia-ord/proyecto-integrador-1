@@ -327,18 +327,34 @@ main {
   color: var(--text-white);
   transition: all 0.2s ease-in;
 }
-
+.logo-img {
+  width: 8%;
+  margin-top: 25px;
+}
+/*DESKTOP QUERIES*/
+@media (max-width: 1600px ) { 
+  .logo-img {
+    width: 5%;
+    margin-top: 35px;
+  } 
+}
+@media (max-width: 1200px ) { 
+  .logo-img {
+    width: 8%;
+    margin-top: 35px;
+  }
+} 
 /*MEDIA QUERIES PARA TABLET*/
 @media (max-width: 992px) {
   /*NAVBAR*/
   .logo-img {
-    width: 8%;
+    width: 10%;
   }
 }
 @media (max-width: 768px) {
   /*NAVBAR*/
   .logo-img {
-    width: 8%;
+    width: 10%;
     padding-top: 5px;
   }
   .navbar__list {
@@ -386,9 +402,20 @@ main {
 
 @media (max-width: 576px) {
   .logo-img {
-    width: 10%;
+    width: 15%;
   }
 }
+@media (max-width: 480px ) { 
+    .logo-img{
+      width: 18%;
+    }
+}
+@media (max-width: 320px) {
+  .logo-img {
+    width: 25%;
+  }
+}
+
 /*SECTION - HERO*/
 #hero {
   padding: 70px 0;
@@ -414,8 +441,9 @@ main {
   margin-top: 90px;
 }
 .hero__logo {
-  width: 100px;
+  max-width: 100px;
 }
+
 .hero-info h1 {
   font-family: var(--primeraFuente);
   font-size: 48px;
@@ -484,6 +512,21 @@ main {
     width: 90%;
   }
 }
+@media (max-width: 480px ) { 
+  .hero-info{
+    text-align: center;
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
+@media (max-width: 320px) { 
+  .hero-info{
+    text-align: center;
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
+
 
 /*SECTION - MENU*/
 #menu {
@@ -586,7 +629,7 @@ main {
 }
 .btn:hover {
   color: var(--cuarto);
-  background-color: var(--primario);
+  background-color: var(--secundario);
 }
 .container-btn {
   display: flex;
@@ -884,6 +927,7 @@ small {
   width: 270px;
   height: 45px;
   font-family: var(--segundaFuente);
+  font-weight: 600;
   text-align: center;
   color: var(--primario);
 }
@@ -905,12 +949,12 @@ small {
 .form__field.success input {
   border: 1px solid #28a745;
 }
-
+.error_msg,
 #form__error {
-  color: #dc3545;
+  color: var(--secundario);
   font-size: 1rem;
   margin: 8px 0px;
-  max-width: 350px;
+  max-width: 250px;
   text-align: center;
 }
 /*SIGN IN*/
