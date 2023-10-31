@@ -285,7 +285,7 @@ const showSuccessModal = (msg)=> {
   successModal.textContent = msg
   setTimeout(()=>{
     successModal.classList.remove("active-modal")
-  },1500)
+  },2000)
 } 
 
 

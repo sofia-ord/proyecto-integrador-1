@@ -641,10 +641,31 @@ main {
 .active {
   background: var(--secundario);
 }
+.add-modal {
+  display: none;
+}
+.active-modal {
+  position: sticky;
+  top: 75px;
+ 
+  padding: 15px 10px;
+  border-radius: 10px;
+  color: var(--quinto);
+  background-color: var(--primario);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  min-width: 375px;
+  transition: all 0.5s ease-out;
+}
 /*MEDIA QUERIES PARA TABLET */
 @media (max-width: 992px) {
   .btn {
     font-size: 12px;
+  }
+  .active-modal{
+    max-width: 100px;
   }
 }
 @media (max-width: 768px) {
@@ -673,7 +694,11 @@ main {
     font-size: 15px;
   }
 }
-
+@media (max-width: 390px ) { 
+  .active-modal{
+   height: 50px;
+  }
+}
 /*NOSOTROS*/
 #nosotros {
   margin-top: 40px;
