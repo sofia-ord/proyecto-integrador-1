@@ -533,8 +533,12 @@ main {
   max-width: 1200px;
   background-color: var(--cuarto);
   width: 90%;
-  margin-left: 60px;
+  /*margin-left: 60px;*/
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 #menu h2 {
@@ -799,19 +803,30 @@ small {
 }
 
 /*MEDIA QUERIES PARA TABLET*/
-@media (max-width: 992px) {
+@media (max-width: 1600px) {
   .contacto-bg {
-    width: 80%;
+    width: 70%;
   }
   .formulario {
-    width: 70%;
+    width: 60%;
+  }
+  small {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 992px) {
+  .contacto-bg {
+    width: 90%;
+  }
+  .formulario {
+    width: 80%;
   }
   small {
     flex-wrap: wrap;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .contacto-bg {
     width: 90%;
   }
