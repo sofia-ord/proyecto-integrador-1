@@ -330,15 +330,21 @@ main {
   transition: all 0.2s ease-in;
 }
 /*DESKTOP QUERIES*/
+@media (max-width: 2400px ) { 
+    .logo-img{
+      width: 4%;
+      margin-top: 10px;
+    }
+}
 @media (max-width: 1600px ) { 
   .logo-img {
-    width: 6%;
+    width: 5%;
     margin-top: 10px;
   } 
 }
 @media (max-width: 1200px ) { 
   .logo-img {
-    width: 8%;
+    width: 6%;
     margin-top: 10px;
   }
 } 
@@ -346,13 +352,13 @@ main {
 @media (max-width: 992px) {
   /*NAVBAR*/
   .logo-img {
-    width: 10%;
+    width: 7%;
   }
 }
 @media (max-width: 768px) {
   /*NAVBAR*/
   .logo-img {
-    width: 10%;
+    width: 8%;
     padding-top: 5px;
   }
   .navbar__list {
@@ -400,17 +406,17 @@ main {
 
 @media (max-width: 576px) {
   .logo-img {
-    width: 15%;
+    width: 10%;
   }
 }
 @media (max-width: 480px ) { 
     .logo-img{
-      width: 18%;
+      width: 15%;
     }
 }
 @media (max-width: 320px) {
   .logo-img {
-    width: 25%;
+    width: 20%;
   }
 }
 
@@ -1033,17 +1039,3 @@ form .signin-btn {
   margin: 5px;
   border-radius: 30px;
 }
-
-/* 
-   FALTA HACER LA PARTE DEL CARRITO DEL NAV
-   VER QUE LAS OPCIONES DEL NAVBAR NAVEGUEN POR LAS SECCIONES#
-   HACER SECTION NOSOTROS Y CONTACTO - CON SUS RESPECTIVOS MQ#
-
-  ARREGLAR MQ DE LA PARTE DE CONTACTOS - SE ROMPE EL FIELD CUANDO CAMBIO DE MQ #
-
-   FOOTER#
-   PAGINA DE LOGIN#
-   PAGINA DE REGISTRO#
-   PAGINA CENTRADA EN RESOLUCIONES MUY GRANDES #
-   REVEER MARGIN-LEFT (porque al centrar desde el main no  hace falta talvez los margenes)# 
-*/
